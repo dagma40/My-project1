@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2b223a411e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+        <nav>
+        <p class="logo">Dagmawit</p>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <a href="#" class="btn">Hire me</a>
+        </nav>
+    </div>
+ </div>
+ <div class="detail">
+    <h1>Hi, My Name is <span> Dagmawit </span></h1>
+    <p>I'm a junior web developer based in Virginia,USA.<br>
+      This is my official website to show all details and work.
+    </p>
+    <a href="images/Dagmawit Resume 1.pdf" class="btn">Downlod Resume</a>
+ </div>
+<div class="image">
+<img src="images/dagi.png">
+</div>
+<!-------about------->
+<div id="about">
+  <div class="container">
+        <h1 class="sub-title">Aabout me</h1>
+        <p>
+          I'm very passionate and dedicated to my work, with a few 
+          years of experience as a professional junior web developer<br>
+          I have aquired the skills necessary to build great, appealing and 
+          premium website that meet the latest web standards.
+
+        </p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('Education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Web Development</span><br>I always try my best to make good user interface with the best user experience.</li>
+            <li><span>HTML</span><br>100%</li>
+            <li><span>CSS,bootstrap</span><br>100%</li>
+            <li><span>Bash,Git</span><br>%100</li>
+            <li><span>JavaScript</span><br>50%</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2022-current</span><br>Student</li>
+            <li><span>2016-2021</span><br>Nurse</li>
+            <li><span></span><br>100%</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2023</span><br>junior web developer</li>
+            <li><span>2016-2021</span><br>Nurse</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------portfolio------------>
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="--">
+        <div class="layer">
+          <h3>Future project</h3>
+          <p>Downlod it from the app store</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+        </div>
+      </div>
+      <div class="work">
+        <img src="--">
+        <div class="layer">
+          <h3>Coming soon</h3>
+          <p>Downlod it from the app store</p>
+          <a href="#"><i class="fas-solid fa-arrow-up-right-from-square"></i></a>
+
+        </div>
+      </div>
+      <div class="work">
+        <img src="--">
+        <div class="layer">
+          <h3>online shopping</h3>
+          <p>Downlod it from the app store</p>
+          <a href="#"><i class="fas-solid fa-arrow-up-right-from-square"></i></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------contact------------>
+<div id="contact">
+  <div class="container">
+  <div class="row">
+    <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fa-solid fa-paper-plane"></i> dagma2121@gmail.com</p>
+      <p><i class="fa-solid fa-square-phone"></i> 4155721749</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+        <a href="https://github.com/dagma40"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i class="fa-brands fa-linkedin"></i></a>
+
+      </div>
+    </div>
+   </div>
+  </div>
+<div class="copyright">
+  <p>2023 By Dagmawit </p>
+</div>
+</div>
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  
+  function opentab(tabname) {
+    for(tablink of tablinks){
+      tablink.classlist.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classlist.remove("active-tab");
+    }
+    event.currentTarget.classlist.add("active-link");
+    document.getElementById(tabname).classList.add(activetab);
+  }
+
+</script>
+
+</body>
+</html>
